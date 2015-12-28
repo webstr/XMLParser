@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Gun>
+    <item id="gun1" >
+        <Model>ИЖ-27ЕМ</Model>
+        <Handy>Двуручное</Handy>
+        <Origin>СССР</Origin>
+        <TTC>
+            <Shooting>Средняя</Shooting>
+            <EffectiveDistance>35</EffectiveDistance>
+            <Clip>Нет</Clip>
+            <Optics>Нет</Optics>
+        </TTC>
+        <Material>Steel</Material>
+    </item>
+    <item id="gun2">
+        <Model>Famas</Model>
+        <Handy>Одноручное</Handy>
+        <Origin>Франция</Origin>
+        <TTC>
+            <Shooting>Ближняя</Shooting>
+            <EffectiveDistance>20</EffectiveDistance>
+            <Clip>25 патронов</Clip>
+            <Optics>Есть</Optics>
+        </TTC>
+        <Material>Steel</Material>
+    </item>
+    <item id="gun3">
+        <Model>ТОЗ</Model>
+        <Handy>Одноручное</Handy>
+        <Origin>СССР</Origin>
+        <TTC>
+            <Shooting>Ближняя</Shooting>
+            <EffectiveDistance>40</EffectiveDistance>
+            <Clip>Нет</Clip>
+            <Optics>Нет</Optics>
+        </TTC>
+        <Material>Дерево</Material>
+    </item>
+    <item id="gun4">
+    <Model>Glock-17</Model>
+    <Handy>Одноручное</Handy>
+    <Origin>США</Origin>
+    <TTC>
+        <Shooting>Ближняя</Shooting>
+        <EffectiveDistance>10</EffectiveDistance>
+        <Clip>10 патронов</Clip>
+        <Optics>Нет</Optics>
+    </TTC>
+    <Material>Steel</Material>
+</item>
+    <item id="gun5">
+    <Model>СВД</Model>
+    <Handy>Двуручное</Handy>
+    <Origin>Россия</Origin>
+    <TTC>
+        <Shooting>Дальняя</Shooting>
+        <EffectiveDistance>1500</EffectiveDistance>
+        <Clip>10 патронов</Clip>
+        <Optics>Есть</Optics>
+    </TTC>
+    <Material>Steel</Material>
+</item>
+    <item id="gun6">
+    <Model>Steyr AUG</Model>
+    <Handy>Двуручное</Handy>
+    <Origin>Австрия</Origin>
+    <TTC>
+        <Shooting>Средняя</Shooting>
+        <EffectiveDistance>500</EffectiveDistance>
+        <Clip>30 патронов</Clip>
+        <Optics>Есть</Optics>
+    </TTC>
+    <Material>Steel</Material>
+</item>
+</Gun>

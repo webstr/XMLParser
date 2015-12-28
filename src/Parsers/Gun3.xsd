@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Gun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Model">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Handy">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                      <xs:pattern value="Одноручное|Двуручное"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Origin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                      <xs:minLength value="2"/>
+                      <xs:maxLength value="25"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TTC">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Distance">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="Близкая"/>
+                                <xs:enumeration value="Средняя"/>
+                                <xs:enumeration value="Дальняя"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                    <xs:element name="EffectiveDistance">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:short">
+                          <xs:minInclusive value="1"/>
+                          <xs:maxInclusive value="5000"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Clip">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="15"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Optics">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Нет"/>
+                          <xs:enumeration value="Есть"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="Material"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
